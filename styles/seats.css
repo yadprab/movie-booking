@@ -388,7 +388,8 @@ main {
   letter-spacing: 1px;
 }
 
-.overlay .ticket--booked section h3, .overlay .ticket--booked section .tickets h3 span, .tickets h3 .overlay .ticket--booked section span, .overlay .ticket--booked section span {
+.overlay .ticket--booked section h3, .overlay .ticket--booked section .tickets h3 span, .tickets h3 .overlay .ticket--booked section span,
+.overlay .ticket--booked section span {
   font-weight: 400;
 }
 

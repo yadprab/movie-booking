@@ -192,7 +192,7 @@ main {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/ano.png);
 }
 
-.movie-12{
+.movie-12 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/babydriver.jpg);
 }
 
@@ -257,6 +257,8 @@ main {
     gap: 5px;
     grid-auto-rows: 50px;
     justify-content: center;
+    height: 50vh;
+    place-content: center;
 
 
     a {
@@ -423,19 +425,20 @@ footer {
 }
 
 //media
-@media screen and (min-width:481px){
-    .overlay{
+@media screen and (min-width:481px) {
+    .overlay {
         max-width: 768px;
     }
 
-    header{
+    header {
         max-width: 768px;
-        nav{
+
+        nav {
             max-width: 768px;
-    
+
         }
 
-        img{
+        img {
             max-width: 768px;
             width: 100%;
             height: 300px;
@@ -443,29 +446,31 @@ footer {
         }
     }
 
-    main{
+    main {
         max-width: 768px;
     }
-    
 
-    footer{
+
+    footer {
         max-width: 768px;
     }
-   
+
 }
-@media screen and (min-width:770px){
-    .overlay{
+
+@media screen and (min-width:770px) {
+    .overlay {
         max-width: 900px;
     }
 
-    header{
+    header {
         max-width: 900px;
-        nav{
+
+        nav {
             max-width: 900px;
-    
+
         }
 
-        img{
+        img {
             max-width: 900px;
             width: 100%;
             height: 300px;
@@ -473,55 +478,58 @@ footer {
         }
     }
 
-    main{
+    main {
         max-width: 900px;
     }
-    .movies-section{
+
+    .movies-section {
         grid-template-columns: repeat(2, 300px);
-      
+
     }
 
-    footer{
+    footer {
         max-width: 900px;
     }
-   
+
 }
-@media screen and (min-width:901px){
-    .overlay{
-      display: none;
+
+@media screen and (min-width:901px) {
+    .overlay {
+        display: none;
     }
 
-    header{
+    header {
         max-width: 1100px;
-        nav{
+
+        nav {
             max-width: 1100px;
             justify-content: space-between;
-            
 
-            ul{
+
+            ul {
                 @include ul;
-               
-              
-                a{
+
+
+                a {
                     @include links;
                     color: var(--Very-dark-Desaturated-blue);
                     font-family: var(--font);
                     font-size: 0.95rem;
 
-                    &:hover{
+                    &:hover {
                         color: var(--blue);
                     }
                 }
             }
 
-            .icons{
+            .icons {
                 display: none;
             }
-            
-    
+
+
         }
 
-        img{
+        img {
             max-width: 1100px;
             width: 100%;
             height: 300px;
@@ -529,55 +537,58 @@ footer {
         }
     }
 
-    main{
+    main {
         max-width: 1100px;
     }
-    .movies-section{
+
+    .movies-section {
         grid-template-columns: repeat(3, 300px);
-      
+
     }
 
-    footer{
+    footer {
         max-width: 1100px;
     }
-   
+
 }
-@media screen and (min-width:1101px){
-    .overlay{
-      display: none;
+
+@media screen and (min-width:1101px) {
+    .overlay {
+        display: none;
     }
 
-    header{
+    header {
         max-width: 1440px;
-        nav{
+
+        nav {
             max-width: 1440px;
             justify-content: space-between;
-            
 
-            ul{
+
+            ul {
                 @include ul;
-               
-              
-                a{
+
+
+                a {
                     @include links;
                     color: var(--Very-dark-Desaturated-blue);
                     font-family: var(--font);
                     font-size: 0.95rem;
 
-                    &:hover{
+                    &:hover {
                         color: var(--blue);
                     }
                 }
             }
 
-            .icons{
+            .icons {
                 display: none;
             }
-            
-    
+
+
         }
 
-        img{
+        img {
             max-width: 1440px;
             width: 100%;
             height: 300px;
@@ -585,16 +596,17 @@ footer {
         }
     }
 
-    main{
+    main {
         max-width: 1440px;
-    }
-    .movies-section{
-        grid-template-columns: repeat(4, 300px);
-      
     }
 
-    footer{
+    .movies-section {
+        grid-template-columns: repeat(4, 300px);
+
+    }
+
+    footer {
         max-width: 1440px;
     }
-   
+
 }
