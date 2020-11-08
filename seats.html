@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/seats.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+
+        <nav >
+            <section class="logo">
+                <h1 id="logo">cinemas</h1>
+            </section>
+         <section class="select"> 
+            <select name="class" id="select-class" autocomplete="off">
+                <option value="" selected  disabled>choose the class</option>
+                <option value="firstclass">firstclass</option>
+                <option value="secondclass">secondclass</option>
+                <option value="thirdclass">thirdclass</option>
+            </select>
+            <button id="down">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 7.29289C5.68342 6.90237 6.31658 6.90237 6.70711 7.29289L10 10.5858L13.2929 7.29289C13.6834 6.90237 14.3166 6.90237 14.7071 7.29289C15.0976 7.68342 15.0976 8.31658 14.7071 8.70711L10.7071 12.7071C10.3166 13.0976 9.68342 13.0976 9.29289 12.7071L5.29289 8.70711C4.90237 8.31658 4.90237 7.68342 5.29289 7.29289Z" fill="#4A5568"/>
+                    </svg>
+                    
+            </button>
+         </section>
+        
+        
+
+
+        </nav>
+      
+    </header>
+    <main>
+        <section class="legends">
+        <h2>available<span id="available-seats"></span></h2>
+        <h2>selected<span id="selected-seats"></span></h2>
+        <h2>occupied<span id="occupied-seats"></span></h2>
+
+
+
+        </section>
+        <section class="seats-container">
+         
+            <section class="firstclass class class-off" data-class="firstclass" >
+                <div class="col">
+                    <div class="row">
+                        <span>A</span>
+                        <span>B</span>
+                        <span>C</span>
+                        <span>D</span>
+                        <span>E</span>
+                        <span>F</span>
+                        <span>G</span>
+                        <span>H</span>
+                        <span>I</span>
+                    
+                    </div>
+                  </div>
+               <div class="col-1">
+                <div class="row">
+                    <div class="seats occupied" data-value="A1"></div>
+                    <div class="seats" data-value="A2"></div>
+                    <div class="seats  occupied" data-value="A3"></div>
+                    <div class="seats  occupied" data-value="A4"></div>
+                    <div class="seats " data-value="B1"></div>
+                    <div class="seats" data-value="B2"></div>
+                    <div class="seats  occupied" data-value="B3"></div>
+                    <div class="seats" data-value="B4"></div>
+                    <div class="seats " data-value="C1"></div>
+                    <div class="seats" data-value="C2"></div>
+                    <div class="seats" data-value="C3"></div>
+                    <div class="seats" data-value="C4"></div>
+                    <div class="seats" data-value="D1"></div>
+                    <div class="seats"data-value="D1"></div>
+                    <div class="seats" data-value="D3"></div>
+                    <div class="seats" data-value="D4"></div>
+                    <div class="seats"data-value="E1"></div>
+                        <div class="seats"data-value="E2"></div>
+                        <div class="seats"data-value="E3"></div>
+                        <div class="seats" data-value="E4"></div>
+                    <div class="seats" data-value="F1"></div>
+                    <div class="seats" data-value="F2"></div>
+                    <div class="seats"data-value="F3"></div>
+                    <div class="seats occupied"data-value="F4"></div>
+                    <div class="seats" data-value="G1"></div>
+                    <div class="seats" data-value="G2"></div>
+                    <div class="seats" data-value="G3"></div>
+                    <div class="seats" data-value="G4"></div>
+                    <div class="seats" data-value="H1"></div>
+                    <div class="seats" data-value="H2"></div>
+                    <div class="seats"data-value="H3"></div>
+                    <div class="seats"data-value="H4"></div>
+                    <div class="seats" data-value="J1"></div>
+                    <div class="seats  occupied" data-value="J2"></div>
+                    <div class="seats" data-value="J3"></div>
+                    <div class="seats" data-value="J4"></div>
+                   
+                    
+                </div>
+               </div>
+                <div class="col-2">
+                    <div class="row">
+                        <div class="seats" data-value="A5"></div>
+                        <div class="seats" data-value="A6"></div>
+                        <div class="seats" data-value="A7"></div>
+                        <div class="seats  occupied" data-value="A8"></div>
+                        <div class="seats" data-value="B5"></div>
+                        <div class="seats"data-value="B6"></div>
+                        <div class="seats"data-value="B7"></div>
+                        <div class="seats" data-value="B8"></div>
+                        <div class="seats" data-value="C5"></div>
+                        <div class="seats" data-value="C6"></div>
+                        <div class="seats"data-value="C7"></div>
+                        <div class="seats" data-value="C8"></div>
+                        <div class="seats"data-value="D5"></div>
+                        <div class="seats" data-value="D6"></div>
+                        <div class="seats" data-value="D7"></div>
+                        <div class="seats"data-value="D8"></div>
+                        <div class="seats"data-value="E5"></div>
+                        <div class="seats"data-value="E6"></div>
+                        <div class="seats"data-value="E7"></div>
+                        <div class="seats" data-value="E8"></div>
+                        <div class="seats" data-value="F5"></div>
+                    <div class="seats occupied" data-value="F6"></div>
+                    <div class="seats"data-value="F7"></div>
+                    <div class="seats "data-value="F8"></div>
+                    <div class="seats occupied" data-value="G5"></div>
+                    <div class="seats" data-value="G6"></div>
+                    <div class="seats" data-value="G7"></div>
+                    <div class="seats" data-value="G8"></div>
+                    <div class="seats" data-value="H5"></div>
+                    <div class="seats" data-value="H6"></div>
+                    <div class="seats"data-value="H7"></div>
+                    <div class="seats"data-value="H8"></div>
+                    <div class="seats" data-value="J5"></div>
+                    <div class="seats  occupied" data-value="J6"></div>
+                    <div class="seats" data-value="J7"></div>
+                    <div class="seats" data-value="J8"></div>
+                        
+                    </div>
+                </div>
+              
+               
+                
+            </section>
+            <section class="secondclass class class-off" data-class="secondclass">
+                <div class="col">
+                    <div class="row">
+                        <span>k</span>
+                        <span>l</span>
+                        <span>m</span>
+                        <span>n</span>
+                       
+                    
+                    </div>
+                  </div>
+                  <div class="col-1">
+                    <div class="row">
+                        <div class="seats" data-value="K1"></div>
+                        <div class="seats"data-value="K2"></div>
+                        <div class="seats"data-value="K3"></div>
+                        <div class="seats  occupied"data-value="K4"></div>
+                        <div class="seats" data-value="L1"></div>
+                        <div class="seats"data-value="L2"></div>
+                        <div class="seats"data-value="L3"></div>
+                        <div class="seats" data-value="L4"></div>
+                        <div class="seats"data-value="M1"></div>
+                        <div class="seats"data-value="M2"></div>
+                        <div class="seats"data-value="M3"></div>
+                        <div class="seats"data-value="M4"></div>
+                        <div class="seats"data-value="N1"></div>
+                        <div class="seats"data-value="N2"></div>
+                        <div class="seats"data-value="N3"></div>
+                        <div class="seats"data-value="N4"></div>
+                        
+                        
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="row">
+                        <div class="seats" data-value="K5"></div>
+                        <div class="seats"data-value="K6"></div>
+                        <div class="seats"data-value="K7"></div>
+                        <div class="seats  occupied"data-value="K8"></div>
+                        <div class="seats" data-value="L5"></div>
+                        <div class="seats"data-value="L6"></div>
+                        <div class="seats"data-value="L7"></div>
+                        <div class="seats" data-value="L8"></div>
+                        <div class="seats"data-value="M5"></div>
+                        <div class="seats"data-value="M6"></div>
+                        <div class="seats"data-value="M7"></div>
+                        <div class="seats"data-value="M8"></div>
+                        <div class="seats"data-value="N5"></div>
+                        <div class="seats"data-value="N6"></div>
+                        <div class="seats"data-value="N7"></div>
+                        <div class="seats"data-value="N8"></div>
+                        
+                        
+                    </div>
+                </div>
+              
+               
+                
+            </section>
+            <section class="thirdclass class class-off" data-class="thirdclass">
+                <div class="col">
+                    <div class="row">
+                        <span>o</span>
+                        <span>p</span>
+                        <span>q</span>
+                        
+                    
+                    </div>
+                  </div>
+                  <div class="col-1">
+                    <div class="row">
+                        <div class="seats" data-value="O1"></div>
+                        <div class="seats"data-value="O2"></div>
+                        <div class="seats"data-value="O3"></div>
+                        <div class="seats  occupied"data-value="O4"></div>
+                        <div class="seats"data-value="P1"></div>
+                        <div class="seats"data-value="P3"></div>
+                        <div class="seats"data-value="P3"></div>
+                        <div class="seats"data-value="P4"></div>
+                        <div class="seats" data-value="Q1"></div>
+                        <div class="seats"data-value="Q2"></div>
+                        <div class="seats"data-value="Q3"></div>
+                        <div class="seats"data-value="Q4"></div>
+                     
+                        
+                        
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="row">
+                        <div class="seats" data-value="O5"></div>
+                        <div class="seats"data-value="O6"></div>
+                        <div class="seats"data-value="O7"></div>
+                        <div class="seats  occupied"data-value="O8"></div>
+                        <div class="seats"data-value="P5"></div>
+                        <div class="seats"data-value="P6"></div>
+                        <div class="seats"data-value="P7"></div>
+                        <div class="seats"data-value="P8"></div>
+                        <div class="seats" data-value="Q5"></div>
+                        <div class="seats"data-value="Q6"></div>
+                        <div class="seats"data-value="Q7"></div>
+                        <div class="seats"data-value="Q4"></div>
+                    </div>
+                </div>
+              
+               
+                
+            </section>
+
+            <div class="screen">
+                <h2>screen this way</h2>
+            </div>
+
+
+
+        </section>
+
+      <section class="tickets">
+       <div class="content">
+        <h3>movie name: <span id="movie-name"></span></h3>
+        <h3>time: <span id="time"></span></h3>
+        <h3>class: <span id="class"></span></h3>
+        <h3>selected seats: <span class="selected-seats"></span></h3>
+        <h3>price: <span class="price"></span></h3>
+       </div>
+
+          <div class="button-area">
+              
+          <button id="book-now">book now</button>
+          </div>
+
+      </section>
+    </main>
+
+
+    <div class="overlay">
+        <section class="ticket--booked">
+           <section class="img--section">
+            <img src="" alt="">
+
+
+           </section>
+           <section class="booking--info">
+            <h3>time: <span id="movie--time"></span></h3>
+            <h3>class: <span id="seat--class"></span></h3>
+            <h3>selected seats: <span class="selected--seats"></span></h3>
+           </section>
+           <section class="total">
+               <h3>total</h3>
+               <h3>price: <span class="total--price"></span></h3>
+           </section>
+        </section>
+
+    </div>
+  <script src="./js/seats.js"></script>  
+</body>
+</html>
