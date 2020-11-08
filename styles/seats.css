@@ -369,8 +369,8 @@ main {
 }
 
 .overlay .ticket--booked {
-  width: 250px;
-  height: 400px;
+  width: 300px;
+  height: 500px;
   padding: 1em;
   display: -ms-grid;
   display: grid;
@@ -396,6 +396,10 @@ main {
   margin-bottom: 1em;
 }
 
+.overlay .ticket--booked section span {
+  display: inline-block;
+}
+
 .overlay .ticket--booked .img--section {
   width: 100%;
   height: 150px;
@@ -419,6 +423,9 @@ main {
 .overlay .booking--info {
   border: 1px solid #cdcd;
   padding: 0.5em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .overlay .total {
@@ -428,6 +435,19 @@ main {
       grid-template-columns: 50px 1fr;
   border: 1px solid #cdcd;
   padding: 1em;
+  -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.overlay .total h3, .overlay .total .tickets h3 span, .tickets h3 .overlay .total span {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.overlay .total .total--price {
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 .visible {
